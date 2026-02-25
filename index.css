@@ -1,0 +1,406 @@
+  /* =========================
+   GLOBAL STYLES
+========================= */
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      /* dark, professional */
+      color: #e0e0e0;
+      /* readable light text */
+      margin: 0;
+      padding-top: 70px;
+  }
+
+  /* CV Button style */
+  .btn-purple {
+      background-color: #bb86fc;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: transform 0.2s, background 0.3s;
+  }
+
+  .btn-purple:hover {
+      background-color: #9a5bd3;
+      transform: scale(1.05);
+  }
+
+  a {
+      text-decoration: none;
+      color: inherit;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+      font-weight: 600;
+  }
+
+  /* =========================
+   NAVBAR
+========================= */
+  .navbar {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+  }
+
+  .navbar-brand {
+      font-weight: 700;
+      color: #bb86fc !important;
+  }
+
+  .navbar-nav .nav-link {
+      color: #ccc !important;
+      transition: color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+      color: #bb86fc !important;
+  }
+
+  .download-cv {
+      background: #bb86fc !important;
+      color: #121212 !important;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: transform 0.2s;
+  }
+
+  .download-cv:hover {
+      transform: scale(1.05);
+  }
+
+  /* =========================
+   HERO SECTION
+========================= */
+  .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 4rem 2rem;
+      text-align: center;
+  }
+
+  .about-image img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 4px solid #bb86fc;
+      margin-bottom: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .about-image img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #bb86fc;
+  }
+
+  .hero-text h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+  }
+
+  .hero-role {
+      font-size: 1.1rem;
+      color: #bb86fc;
+      margin-bottom: 1rem;
+  }
+
+  .hero-desc {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+  }
+
+  .cta-button {
+      background: #bb86fc;
+      color: #121212;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: transform 0.2s, background 0.3s;
+  }
+
+  .cta-button:hover {
+      transform: scale(1.05);
+      background: #9a5bd3;
+  }
+
+  .hero-highlights {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 3rem;
+  }
+
+  .hero-highlights .highlight {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ccc;
+      transition: transform 0.3s, color 0.3s;
+  }
+
+  .hero-highlights .highlight i {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+  }
+
+  .hero-highlights .highlight:hover {
+      transform: scale(1.1);
+      color: #bb86fc;
+  }
+
+  /* =========================
+   SECTIONS
+========================= */
+  .section {
+      padding: 4rem 2rem;
+      text-align: center;
+  }
+
+  .section h2 {
+      font-size: 2rem;
+      color: #bb86fc;
+      margin-bottom: 2rem;
+  }
+
+  /* =========================
+   SERVICES & PORTFOLIO CARDS
+========================= */
+  .card {
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(187, 134, 252, 0.5);
+  }
+
+  .card i {
+      color: #bb86fc;
+      margin-bottom: 1rem;
+  }
+
+  .card h3 {
+      margin-bottom: 0.5rem;
+      color: #fff;
+  }
+
+  .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+  }
+
+  /* Portfolio Buttons */
+  .portfolio-buttons .btn {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.8rem;
+      transition: transform 0.2s, background 0.3s;
+      margin: 0 0.6rem;
+      /* adds horizontal space between buttons */
+  }
+
+  .portfolio-buttons .btn:hover {
+      transform: scale(1.05);
+  }
+
+  /* =========================
+   CONTACT FORM
+========================= */
+  .contact-form input,
+  .contact-form textarea {
+      background: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 5px;
+      color: #e0e0e0;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+      border-color: #bb86fc;
+      outline: none;
+  }
+
+  .contact-form input[type="submit"] {
+      background: #bb86fc;
+      color: #121212;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+  }
+
+  .contact-form input[type="submit"]:hover {
+      background: #9a5bd3;
+      transform: scale(1.05);
+  }
+
+  /* =========================
+   FOOTER
+========================= */
+  footer {
+      background: #1f1f1f;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+  }
+
+  /* =========================
+   MODAL STYLING
+========================= */
+  .modal-content {
+      background: #1a1a1a;
+      color: #e0e0e0;
+      border-radius: 10px;
+  }
+
+  .carousel-inner img {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  /* =========================
+   RESPONSIVE
+========================= */
+  @media (max-width: 992px) {
+      .hero {
+          flex-direction: column;
+      }
+
+      .hero-text {
+          margin-top: 2rem;
+      }
+
+      .hero-highlights {
+          gap: 1.5rem;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .about-image img {
+          width: 150px;
+          height: 150px;
+      }
+
+      .card {
+          width: 100% !important;
+      }
+  }
+
+  /* =========================
+   GLOBAL FADE-IN ANIMATION
+========================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   NAVBAR SCROLL EFFECT
+========================= */
+.navbar.scrolled {
+    background: rgba(31,31,31,0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   BUTTON GLOW EFFECT
+========================= */
+.btn-purple:hover,
+.download-cv:hover,
+.cta-button:hover {
+    box-shadow: 0 0 15px #bb86fc, 0 0 40px rgba(187,134,252,0.4);
+}
+
+/* =========================
+   CARD FLOAT EFFECT
+========================= */
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: linear-gradient(120deg, transparent, rgba(187,134,252,0.15), transparent);
+    transform: rotate(25deg);
+    top: -120%;
+    left: -120%;
+    transition: 0.6s;
+}
+
+.card:hover::before {
+    top: 120%;
+    left: 120%;
+}
+
+/* =========================
+   HERO IMAGE PULSE BORDER
+========================= */
+.about-image img {
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0%,100% { box-shadow: 0 0 10px rgba(187,134,252,0.4); }
+    50% { box-shadow: 0 0 25px rgba(187,134,252,0.8); }
+}
+
+/* =========================
+   NAV LINK UNDERLINE ANIMATION
+========================= */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #bb86fc;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* =========================
+   SECTION TITLE GLOW
+========================= */
+.section h2 {
+    animation: glowTitle 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowTitle {
+    from { text-shadow: 0 0 5px rgba(187,134,252,0.2); }
+    to { text-shadow: 0 0 20px rgba(187,134,252,0.7); }
+}
