@@ -1,5 +1,21 @@
 const projects = [
     {
+        title: "School Election Voting System",
+        desc: "A web-based platform for managing school elections, allowing students to vote securely and administrators to manage candidates and results.",
+        images: ["vote2.JPG", "vote3.JPG", "vote4.JPG"],
+        tech: "PHP, MySQL, Bootstrap, AJAX, jQuery",
+        github: "https://github.com/marvinboloabio/school-voting-system.git",
+        mainImg: "vote1.JPG"
+    },
+    {
+        title: "Grocery Store POS System",
+        desc: "A web-based platform for managing a grocery store’s point-of-sale operations, including product sales, inventory tracking, and transaction records.",
+        images: ["pos2.JPG", "pos3.JPG", "pos4.JPG"],
+        tech: "PHP, MySQL, Bootstrap, AJAX, jQuery",
+        github: "https://github.com/marvinboloabio/sari-sari.git",
+        mainImg: "pos1.JPG"
+    },
+    {
         title: "Congressional Draft System",
         desc: "Web platform for managing legislative drafts, tracking submissions, and generating reports for congressional workflow.",
         images: ["cong1.JPG", "cong2.JPG", "cong3.JPG"],
