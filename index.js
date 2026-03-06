@@ -53,7 +53,7 @@ const projects = [
         images: ["isp2.JPG", "isp3.JPG", "isp4.JPG"],
         tech: "PHP, MySQL, AJAX, Bootstrap, Jquery",
         github: "https://github.com/marvinboloabio/ISP-BILLING-SYSTEM.git",
-        mainImg: "isp1.JPG"
+        mainImg: "isp1.jpg"
     },
     {
         title: "Church Event Online Booking System",
